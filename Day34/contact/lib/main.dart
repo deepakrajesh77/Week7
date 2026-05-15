@@ -52,7 +52,7 @@ class ContactPage extends StatelessWidget {
       ),
       body: Column(
         children: [
-          // 🔲 Category Grid
+          //  Category Grid
           Container(
             height: 120,
             padding: EdgeInsets.all(8),
@@ -77,7 +77,7 @@ class ContactPage extends StatelessWidget {
                     category["name"],
                     style: TextStyle(
                       fontWeight: FontWeight.bold,
-                      color: Colors.white, // ✅ FIXED visibility
+                      color: Colors.white, 
                     ),
                   ),
                 );
@@ -85,11 +85,11 @@ class ContactPage extends StatelessWidget {
             ),
           ),
 
-          // 📋 Contact List
+          //  Contact List
           Expanded(
             child: ListView.separated(
               itemCount: contacts.length,
-              separatorBuilder: (_, __) => Divider(), // ✅ cleaner UI
+              separatorBuilder: (_, __) => Divider(),
               itemBuilder: (context, index) {
                 final contact = contacts[index];
 
